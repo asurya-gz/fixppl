@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,8 +7,9 @@ body {
     height: 100vh;
     width: 100%;
 }
+
 .container {
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -26,4 +27,35 @@ a {
 
 nav {
     border-bottom: 1px solid #333;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.text-blue {
+    color: #007bff;
+}
+
+.text-danger {
+    color: #dc3545;
 }
