@@ -1,71 +1,43 @@
-.nav {
-    border-bottom: 1px solid #333;
-    height: 10%;
-}
-
-body{
-    height: 100vh;
-    width: 100%;
-}
-
-.nav a{
-    margin-top: 10%;
+body {
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
-    height: 90%;
-    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 .kiri {
-    height: 100%;
-    width: 50%;
-}
-.kanan {
-    height: 100%;
-    width: 50%;
+    width: 300px;
 }
 
-.sem123{
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select,
+input {
     width: 100%;
-    height: 20%;
-    display: flex;
-    margin-top: 10%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
-.sem1, .sem2, .sem3{
-    height: 100%;
-    width: 25%;
-    margin-left: 6%;
-}
-.sem1 {
-    text-align: center;
-    background-color: azure;
-    border: 3px solid #333;
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    cursor: pointer;
 }
 
-.sem1 label {
-    margin-top: 10%;
+button:hover {
+    background-color: #45a049;
 }
 
-.sem1 button {
-    margin-top: 10%;
-}
 
-.sem456{
-    margin-top: 10%;
-    width: 100%;
-    display: flex;
-    height: 20%;
-}
-.sem789{
-    margin-top: 10%;
-    width: 100%;
-    height: 20%;
-    display: flex;
-}
+
