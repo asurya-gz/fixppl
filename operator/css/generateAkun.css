@@ -1,0 +1,65 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Container Style */
+.utama {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading Style */
+h2 {
+    color: #1a202c;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Style */
+p {
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+/* Input Style */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+}
+
+/* Button Style */
+button {
+    background-color: #007FFF;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007FFF;
+}

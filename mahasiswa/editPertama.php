@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Profile</title>
-    <link rel="stylesheet" href="css/editProfileMahasiswa.css">
+    <title>Update data diri</title>
+    <link rel="stylesheet" href="css/editPertama.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
@@ -34,15 +34,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../dashboardMahasiswa.php">Utama</a>
-            </li>
-            <!-- Add more navigation items as needed -->
-        </ul>
-    </nav>
-
     <div class="container">
         <div class="edit-profile-box">
             <h2 class="text-center mb-3">Edit Profile</h2>
@@ -106,7 +97,7 @@
                 </div>
 
                 <div class="mb-3 text-center">
-                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="submit" class="btn btn-primary">Simpan dan Lanjutkan</button>
                 </div>
             </form>
         </div>
