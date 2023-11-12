@@ -40,6 +40,10 @@ button {
     cursor: pointer;
 }
 
+.nav{
+    border-bottom: 1px solid #333;
+}
+
 button:hover {
     background-color: #007FFF;
 }
