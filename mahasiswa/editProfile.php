@@ -64,6 +64,26 @@
                 </div>
 
                 <div class="mb-3">
+                    <label for="departemen" class="form-label">Departemen</label>
+                    <input type="text" class="form-control" id="departemen" name="departemen" value="Informatika" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="fakultas" class="form-label">Fakultas</label>
+                    <input type="text" class="form-control" id="fakultas" name="fakultas" value="Sains dan Matematika" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="jalurmasuk" class="form-label">Jalur Masuk</label>
+                    <select class="form-select" id="jalurmasuk" name="jalurmasuk" required>
+                        <option value="snmptn">SNMPTN</option>
+                        <option value="sbmptn">SBMPTN</option>
+                        <option value="mandiri">Mandiri</option>
+                        <option value="orangdalem">Orang Dalem</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
                     <label for="dosenWali" class="form-label">Dosen Wali</label>
                     <input type="text" class="form-control" id="dosenWali" name="dosenWali" value="Dr. Jane Smith" required>
                 </div>
@@ -71,6 +91,10 @@
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" name="email" value="john.doe@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telpon" class="form-label">Nomor HP</label>
+                    <input type="tel" class="form-control" id="telpon" name="telpon" value="0812345678" required>
                 </div>
 
                 <div class="mb-3">
