@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Nov 2023 pada 13.13
+-- Waktu pembuatan: 13 Nov 2023 pada 16.56
 -- Versi server: 8.0.34
 -- Versi PHP: 8.2.4
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `fixppl`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `departemen`
+--
+
+CREATE TABLE `departemen` (
+  `id` int NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `dosenwali`
+--
+
+CREATE TABLE `dosenwali` (
+  `nip` varchar(18) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -42,9 +67,36 @@ CREATE TABLE `mahasiswa` (
   `alamat` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `operator`
+--
+
+CREATE TABLE `operator` (
+  `nip` varchar(18) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `departemen`
+--
+ALTER TABLE `departemen`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indeks untuk tabel `dosenwali`
+--
+ALTER TABLE `dosenwali`
+  ADD PRIMARY KEY (`nip`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indeks untuk tabel `mahasiswa`
@@ -52,6 +104,23 @@ CREATE TABLE `mahasiswa` (
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`nim`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indeks untuk tabel `operator`
+--
+ALTER TABLE `operator`
+  ADD PRIMARY KEY (`nip`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
+--
+
+--
+-- AUTO_INCREMENT untuk tabel `departemen`
+--
+ALTER TABLE `departemen`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
