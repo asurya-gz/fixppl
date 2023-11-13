@@ -13,6 +13,7 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
+  width: 40%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,7 +40,7 @@ select {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #007FFF;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -64,5 +65,5 @@ button:disabled {
 }
 
 .back-button:hover {
-    background-color: #45a049;
+    background-color: #007FFF;
 }
