@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Nov 2023 pada 16.56
+-- Waktu pembuatan: 14 Nov 2023 pada 02.43
 -- Versi server: 8.0.34
 -- Versi PHP: 8.2.4
 
@@ -33,6 +33,13 @@ CREATE TABLE `departemen` (
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data untuk tabel `departemen`
+--
+
+INSERT INTO `departemen` (`id`, `email`, `password`) VALUES
+(1, 'departemen@gmail.com', 'departemen');
+
 -- --------------------------------------------------------
 
 --
@@ -45,6 +52,14 @@ CREATE TABLE `dosenwali` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `dosenwali`
+--
+
+INSERT INTO `dosenwali` (`nip`, `nama`, `email`, `password`) VALUES
+('098765433456789012', 'doswal1', 'doswal1@gmail.com', 'doswal1'),
+('098765433456789123', 'doswal2', 'doswal2@gmail.com', 'doswal2');
 
 -- --------------------------------------------------------
 
@@ -79,6 +94,13 @@ CREATE TABLE `operator` (
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `operator`
+--
+
+INSERT INTO `operator` (`nip`, `nama`, `email`, `password`) VALUES
+('123456789987654321', 'operator', 'operator@gmail.com', 'operator123');
 
 --
 -- Indexes for dumped tables
@@ -120,7 +142,7 @@ ALTER TABLE `operator`
 -- AUTO_INCREMENT untuk tabel `departemen`
 --
 ALTER TABLE `departemen`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
